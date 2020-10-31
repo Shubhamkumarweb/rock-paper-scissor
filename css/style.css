@@ -1,0 +1,116 @@
+
+*{
+margin:0;
+padding:0;
+font-size: 10;
+}
+body
+{
+    background-color: rgb(255, 187, 0);
+}
+h1,h3{
+    font-family: 'Black ops one',cursive;
+padding:10px;
+text-align: center;
+}
+h1
+{
+font-size: 3rem;
+}
+h3
+{
+    color:white;
+}
+.score
+{
+    display:grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    /* border:2px solid black; */
+    padding:10px;
+    font-family: 'Black ops one',cursive;
+}
+#win-count,#lose-count,#tie-count
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.game
+{
+    height:280px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.game img{
+    display: block;
+    height: 100px;
+    width:180px;
+    margin:65px auto;
+    /* transform-origin: 20% 90%; */
+}
+#you{
+transform-origin: 20% 80%;
+}
+#comp{
+    transform-origin: 80% 20%;
+    }
+    .result
+    {
+        color:red;
+        height:20px;
+        text-align: center;
+        font-weight: bold;
+        padding:5px;
+    }
+.choice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.shaking
+{
+   animation: shake 1.5s;
+}
+#choice{
+    border: 2px solid red;
+    height:30px;
+    width:30px;
+    padding:6px;
+    border-radius:50% ;
+    transform: rotate(90deg);
+    background-color: red;
+    margin:0 10px;
+    cursor: pointer;
+}
+#choice:hover
+{
+transform:scale(1.2);    
+}
+@keyframes shake
+{
+    0%{transform:rotate(22deg);}
+    15%{transform:rotate(-22deg);}
+    30%{transform:rotate(22deg);}
+    45%{transform:rotate(-22deg);}
+    60%{transform:rotate(22deg);}
+    75%{transform:rotate(-22deg);}
+    90%{transform:rotate(22deg);}
+}
+.shaking-anti
+{
+   animation: shake-anti 1.5s;
+   
+}
+@keyframes shake-anti
+{
+    0%{transform:rotate(-22deg);}
+    15%{transform:rotate(22deg);}
+    30%{transform:rotate(-22deg);}
+    45%{transform:rotate(22deg);}
+    60%{transform:rotate(-22deg);}
+    75%{transform:rotate(22deg);}
+    90%{transform:rotate(-22deg);}
+}
