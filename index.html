@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lobster&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <h3>Round <span id="round"> 0</span></h3>
+    <div class="score">
+        <div class="you">YOU <br><span id="win-count">0</span></div>
+        <div class="ties">TIES <br><span id="tie-count">0</span></div>
+        <div class="computer">COMPUTER <br><span id="lose-count">0</span></div>
+     </div>
+     <p class="result"><span id="result"></span></p>
+    <div class="game">
+        <img src="img/rock-you.png" id="you">
+        <img src="img/rock.png" id="comp">
+    </div>
+    
+        <div class="choice">
+             <img src="img/rock.png" class="rock" onclick="rock()" id="choice">
+             <img src="img/paper.png" class="paper" onclick="paper()"id="choice">
+             <img src="img/scissor.png" class="scissor" onclick="scissor()"id="choice">
+        </div>
+        
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</html>
